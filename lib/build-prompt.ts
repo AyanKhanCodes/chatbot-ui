@@ -251,7 +251,7 @@ export async function adaptMessagesForGoogleGemini(
     geminiMessages.push(adaptedMessage)
   }
 
-  if (payload.chatSettings.model === "gemini-pro-vision") {
+  if (payload.chatSettings.model === "gemini-2.5-pro") {
     geminiMessages = adaptMessagesForGeminiVision(geminiMessages)
   }
   return geminiMessages
