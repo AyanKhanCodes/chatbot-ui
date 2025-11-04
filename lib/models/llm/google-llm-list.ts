@@ -6,10 +6,10 @@ const GOOGLE_PLATORM_LINK = "https://ai.google.dev/"
 
 // Gemini 1.5 Flash
 const GEMINI_1_5_FLASH: LLM = {
-  modelId: "gemini-1.5-flash",
+  modelId: "gemini-1.5-flash-latest",
   modelName: "Gemini 1.5 Flash",
   provider: "google",
-  hostedId: "gemini-1.5-flash",
+  hostedId: "gemini-1.5-flash-latest",
   platformLink: GOOGLE_PLATORM_LINK,
   imageInput: true
 }
@@ -44,4 +44,9 @@ const GEMINI_PRO_VISION: LLM = {
   imageInput: true
 }
 
-export const GOOGLE_LLM_LIST: LLM[] = [GEMINI_PRO, GEMINI_PRO_VISION, GEMINI_1_5_PRO, GEMINI_1_5_FLASH]
+export const GOOGLE_LLM_LIST: LLM[] = [
+  GEMINI_PRO,
+  GEMINI_PRO_VISION,
+  GEMINI_1_5_PRO,
+  GEMINI_1_5_FLASH
+]
